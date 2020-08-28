@@ -1,5 +1,8 @@
 body {
 	font-family: 'Roboto', sans-serif;
+	background: #2193b0;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
@@ -29,6 +32,23 @@ li:nth-child(2n){
 	background: #F7F7F7;
 }
 
+span {
+	background: #E74C3C;
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span{
+	width: 40px;
+	opacity: 1.0;
+}
+
 input {
 	font-size: 18px;
 	color: #2980B9;
@@ -38,6 +58,7 @@ input {
 	/*Makes sure the element does not
 	take up the margin but only the padding.*/
 	box-sizing: border-box;
+	border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input:focus {
@@ -56,4 +77,8 @@ input:focus {
 .completed {
 	color: gray;
 	text-decoration: line-through;
+}
+
+.fa-plus {
+	float: right;
 }
