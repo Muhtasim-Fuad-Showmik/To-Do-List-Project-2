@@ -21,17 +21,6 @@ ul {
 	padding: 0;
 }
 
-li {
-	background: white;
-	height: 40px;
-	line-height: 40px;
-	color: #666;
-}
-
-li:nth-child(2n){
-	background: #F7F7F7;
-}
-
 span {
 	background: #E74C3C;
 	height: 40px;
@@ -42,6 +31,17 @@ span {
 	display: inline-block;
 	transition: 0.2s linear;
 	opacity: 0;
+}
+
+li {
+	background: white;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+
+li:nth-child(2n){
+	background: #F7F7F7;
 }
 
 li:hover span{

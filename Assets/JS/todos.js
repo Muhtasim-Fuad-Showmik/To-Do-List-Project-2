@@ -20,4 +20,9 @@ $("input[type='text']").keypress(function(event){
 		// Create a new li and add to ul
 		$("ul").append("<li><span><i class='fas fa-trash-alt'></i></span> " + todoText + "</li>");
 	}
-})
+});
+
+// Toggle the input form
+$(".fa-plus").click(function(){
+	$("input[type='text']").fadeToggle();
+});
